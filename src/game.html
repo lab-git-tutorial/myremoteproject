@@ -17,9 +17,10 @@ var myObstacles = [];
 var myScore;
 
 function startGame() {
-    myGamePiece = new component(30, 30, "red", 10, 120);
+<<<<<<< HEAD
+    myGamePiece = new component(30, 30, "green", 10, 120);
     myGamePiece.gravity = 0.05;
-    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myScore = new component("18px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
 
@@ -82,7 +83,7 @@ function component(width, height, color, x, y, type) {
         var otherright = otherobj.x + (otherobj.width);
         var othertop = otherobj.y;
         var otherbottom = otherobj.y + (otherobj.height);
-        var crash = true;
+        var crash = false;
         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
             crash = false;
         }
@@ -130,8 +131,9 @@ function accelerate(n) {
 }
 </script>
 <br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-<p>Use the ACCELERATE button to stay in the air</p>
-<p>How long can you stay alive?</p>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERER</button>
+<p>Utilise le bouton ACCELERER pour rester en l'air</p>
+<p>Combien de temps peux-tu reter en vie ?</p>
+Ce jeu est bien !
 </body>
 </html>
